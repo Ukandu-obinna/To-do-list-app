@@ -32,7 +32,7 @@ Steps to Run Locally
 1️⃣ Download the project files
 
 If using Git:
-git clone https://github.com/your-username/todo-list-app.git
+git clone https://github.com/Ukandu-obinna/To-do-list-app.git
 If downloading manually, extract the ZIP file into a folder.
 2️⃣ Open the project folder in your code editor.
 
