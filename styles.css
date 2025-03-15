@@ -7,14 +7,14 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #2D3748;
-  background-color: #F7FAFC;
+  background: linear-gradient(to bottom, #e0e7ff,#c7d2fe);
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Align items to the top */
   height: 100vh;
   overflow: hidden; /* Prevent body from scrolling */
   font-weight: 400;
-}
+} 
 
 .container {
   background: #FFFFFF;
@@ -116,6 +116,20 @@ border-color: #5A67D8;
   color: #333333;
 }
 
+#task-list li:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #e0e7ff;
+  border-left: 5px solid #5A67D8;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#task-list li:active {
+  transform: scale(0.98);
+  transition: transform 0.1s ease-in-out;
+  background-color: #c3dafe;
+}
+
 #task-list li.completed span {
   text-decoration: line-through;
   color: #888;
@@ -180,12 +194,16 @@ border-color: #5A67D8;
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+#task-list li {
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .container, #task-list {
